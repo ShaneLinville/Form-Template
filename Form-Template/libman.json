@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "react@16.12.0",
+      "destination": "wwwroot/react/"
+    },
+    {
+      "library": "formsy-react@0.19.5",
+      "destination": "wwwroot/formsy-react/"
+    }
+  ]
+}

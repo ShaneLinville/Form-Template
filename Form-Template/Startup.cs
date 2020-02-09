@@ -45,16 +45,21 @@ namespace Form_Template
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseDeveloperExceptionPage();
+            app.UseStaticFiles();
             app.UseRouting();
 
-            //app.UseEndpoints(endpoints =>
-            //{
-            //    endpoints.MapGet("/", async context =>
-            //    {
-            //        await context.Response.WriteAsync("Hello World!");
-            //    });
-            //});
+            app.UseEndpoints(endpoints =>
+            {
+                //endpoints.MapGet("/", async context =>
+                //{
+                //    await context.Response.WriteAsync("Hello World!");
+                //});
+
+                endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Account}/{action=Index}/{id?}");
+            });
         }
     }
 }
