@@ -9,10 +9,12 @@ namespace Form_Template.Data.Repository
     public class Repository : IRepository
     {
         private readonly AccountDbContext _ctx;
+  
 
         public Repository(AccountDbContext ctx)
         {
             _ctx = ctx;
+         
         }
 
         public void AddAccount(Account account)
