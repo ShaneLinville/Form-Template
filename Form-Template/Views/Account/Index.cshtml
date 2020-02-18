@@ -1,7 +1,36 @@
-﻿@{
+﻿@model IEnumerable<Account>
+@{
     ViewData["Title"] = "Index";
 }
 
-
-
 <h1>Form Template</h1>
+
+<div class="container">
+    <div class="col-md-10">
+        <table>
+            <tr>
+                <th>Account Id</th>
+                <th>Email</th>
+                <th>User Name</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+            </tr>
+
+            @foreach (var accounts in Model)
+            {<tr>
+                    
+                    <td>@accounts.Id</td>
+                    <td>@accounts.Email</td>
+                    <td>@accounts.UserName</td>
+                    <td>@accounts.FirstName</td>
+                    <td>@accounts.LastName</td>
+                    
+                </tr>}
+        </table>
+
+
+    </div>
+
+
+
+</div>

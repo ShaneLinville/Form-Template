@@ -4,6 +4,7 @@ using System.Configuration;
 using System.Linq;
 using System.Threading.Tasks;
 using Form_Template.Data;
+using Form_Template.Data.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -36,6 +37,8 @@ namespace Form_Template
             services.AddDbContext<AccountDbContext>(options =>
            options.UseSqlServer(Configuration.GetConnectionString("AccountDbContext")));
             services.AddMvc();
+
+            services.AddTransient<IRepository, Repository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
