@@ -80,7 +80,16 @@ namespace Form_Template.Controllers
                 UserName = vm.UserName,
                 Password = vm.Password,
                 FirstName = vm.FirstName,
-                LastName = vm.LastName
+                LastName = vm.LastName,
+                StreetAddress = vm.StreetAddress,
+                State = vm.State,
+                City = vm.City,
+                ZipCode = vm.ZipCode,
+                Phone = vm.Phone,
+                AptSuite = vm.AptSuite,
+                Age = vm.Age,
+                MarriedStatus = vm.MarriedStatus,
+                Gender = vm.Gender,
             };
 
             if (account.Id > 0)
