@@ -7,13 +7,18 @@
     <script src="~/react/cjs/react.development.js"></script>
     <script src="~/react/umd/react.development.js"></script>
     <script src="~/react-bootstrap/react-bootstrap.js"></script>
+    <link href="~/twitter-bootstrap/css/bootstrap.css" rel="stylesheet" />
 </head>
 <body>
-    <nav class="navbar">
-        <a asp-controller="Account" asp-action="Index">Home</a>
-        <a asp-controller="Account" asp-action="Edit">Create</a>
-        <a asp-controller="Account" asp-action="Details">Details</a>
-    </nav>
+    <div class="container">
+        <div class="row">
+            <nav class="navbar">
+                <a asp-controller="Account" asp-action="Index">Home</a>
+                <a asp-controller="Account" asp-action="Edit">Create</a>
+                <a asp-controller="Account" asp-action="Details">Details</a>
+            </nav>
+        </div>
+    </div>
 
     <div>
         @RenderBody()
