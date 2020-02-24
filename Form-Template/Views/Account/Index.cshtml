@@ -18,14 +18,25 @@
 
             @foreach (var accounts in Model)
             {<tr>
-                    
-                    <td>@accounts.Id</td>
-                    <td>@accounts.Email</td>
-                    <td>@accounts.UserName</td>
-                    <td>@accounts.FirstName</td>
-                    <td>@accounts.LastName</td>
-                    
-                </tr>}
+
+    <td>@accounts.Id</td>
+    <td>@accounts.Email</td>
+    <td>@accounts.UserName</td>
+    <td>@accounts.FirstName</td>
+    <td>@accounts.LastName</td>
+
+    <td><a asp-controller="Account" asp-action="Details" asp-route-id="@accounts.Id">Details</a></td>
+    <td>
+        <a asp-controller="Account" asp-action="Remove" asp-route-id="@accounts.Id">
+            Remove
+        </a>
+    </td>
+    <td>
+        <a asp-controller="Account" asp-action="Edit" asp-route-id="@accounts.Id">
+            Edit
+        </a>
+    </td>
+</tr>}
         </table>
 
 

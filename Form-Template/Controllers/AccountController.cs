@@ -106,7 +106,7 @@ namespace Form_Template.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> Remove(int id)
         {
             _repo.RemoveAccount(id);
