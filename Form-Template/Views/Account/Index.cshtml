@@ -6,9 +6,9 @@
 
 <div class="container">
     <h1>Form Template</h1>
-    <div class="col-md-10">
-        <table>
-            <tr>
+    <div>
+        <table class="d-table">
+            <tr class="d-md-table-row">
                 <th>Account Id</th>
                 <th>Email</th>
                 <th>User Name</th>
@@ -17,7 +17,7 @@
             </tr>
 
             @foreach (var accounts in Model)
-            {<tr>
+            {<tr class="d-md-table-row">
 
     <td>@accounts.Id</td>
     <td>@accounts.Email</td>

@@ -1,0 +1,29 @@
+﻿body {
+}
+
+
+th, td{
+    padding:10px;
+    text-align: center;
+    border-bottom: solid;
+}
+
+label {
+    display: inline-block;
+    float: left;
+    text-align: right;
+    width: 250px;
+    margin: 10px;
+    border-right: 2px dotted;
+    padding: 5px;
+}
+
+input {
+    margin: 20px;
+    width: 250px;
+    padding: 5px;
+    height: 30px;
+    border-radius: 25px 25px 25px 25px;
+    background-color: lightblue;
+}
+

@@ -4,19 +4,17 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md=6">
-
-                <div>
+                <div class="col-md-6">
                     <p>@Model.UserName</p>
                     <p>@Model.FirstName</p>
                     <p>@Model.LastName</p>
-                </div>
-                <div class="col-md=3">
+               </div>
+                <div class="col-md-3">
                     <p>@Model.Age</p>
                     <p>@Model.Gender</p>
                     <p>@Model.MarriedStatus</p>
                 </div>
-                <div class="col-md=3">
+                <div class="col-md-3">
                     <p>@Model.StreetAddress</p>
                     <p>@Model.AptSuite</p>
                     <p>@Model.City</p>
@@ -25,13 +23,13 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md=6">
+                <div class="col-md-12">
                     <h4>Contact Info:</h4>
                     <p>@Model.Phone</p>
                     <p>@Model.Email</p>
                 </div>
             </div>
-        </div>
+       
         <a asp-controller="Account" asp-action="Edit" asp-route-id="@Model.Id">
             Edit
         </a>
